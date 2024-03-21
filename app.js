@@ -62,11 +62,11 @@ function finalResult(userScore, AiScore) {
   if (userScore === 5) {
     choicesBox.style.visibility = "hidden";
     replayBox.style.visibility = "visible";
-    replayBox.querySelector("h3").textContent = "You won the game!";
+    replayBox.querySelector("h3").textContent = "User won the game!";
   } else if (AiScore === 5) {
     choicesBox.style.visibility = "hidden";
     replayBox.style.visibility = "visible";
-    replayBox.querySelector("h3").textContent = "Comp won the game!";
+    replayBox.querySelector("h3").textContent = "AI won the game!";
   }
 }
 
