@@ -28,32 +28,32 @@ function AiHandChoice(hand) {
   AiHandImg.src = `assets/${hand}-hand.png`;
 }
 
-function HandChoicesCheck(playerHand, CompHand) {
-  console.log("Player chose:", playerHand);
-  console.log("Comp chose:", CompHand);
+function HandChoicesCheck(userHand, AiHand) {
+  console.log("User chose:", userHand);
+  console.log("AI chose:", AiHand);
 
   if (
-    (playerHand === "rock" && CompHand === "scissors") ||
-    (playerHand === "paper" && CompHand === "rock") ||
-    (playerHand === "scissors" && CompHand === "paper")
+    (userHand === "rock" && AiHand === "scissors") ||
+    (userHand === "paper" && AiHand === "rock") ||
+    (userHand === "scissors" && AiHand === "paper")
   ) {
     userScore++;
     userScoreNumber.textContent = userScore;
-    console.log("Player wins this round!");
+    console.log("User wins this round!");
   } else if (
-    (playerHand === "rock" && CompHand === "paper") ||
-    (playerHand === "paper" && CompHand === "scissors") ||
-    (playerHand === "scissors" && CompHand === "rock")
+    (userHand === "rock" && AiHand === "paper") ||
+    (userHand === "paper" && AiHand === "scissors") ||
+    (userHand === "scissors" && AiHand === "rock")
   ) {
     AiScore++;
     AiScoreNumber.textContent = AiScore;
-    console.log("Comp wins this round!");
+    console.log("AI wins this round!");
   } else {
     console.log("It's a tie!");
   }
 
-  console.log("Player's score:", userScore);
-  console.log("Comp's score:", AiScore);
+  console.log("User's score:", userScore);
+  console.log("Ai's score:", AiScore);
 
   finalResult(userScore, AiScore);
 }
