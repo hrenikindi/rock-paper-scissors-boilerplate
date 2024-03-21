@@ -5,7 +5,7 @@ const choices = document.querySelectorAll(".logos > img");
 const choicesBox = document.querySelector(".logos");
 const userScoreNumber = document.querySelector(".user-score");
 const AiScoreNumber = document.querySelector(".Ai-score");
-const playAgainBox = document.querySelector(".play-again");
+const replayBox = document.querySelector(".play-again");
 const gameOptions = ["rock", "paper", "scissors"];
 
 let userScore = 0;
@@ -61,12 +61,12 @@ function HandChoicesCheck(userHand, AiHand) {
 function finalResult(userScore, AiScore) {
   if (userScore === 5) {
     choicesBox.style.visibility = "hidden";
-    playAgainBox.style.visibility = "visible";
-    playAgainBox.querySelector("h3").textContent = "You won the game!";
+    replayBox.style.visibility = "visible";
+    replayBox.querySelector("h3").textContent = "You won the game!";
   } else if (AiScore === 5) {
     choicesBox.style.visibility = "hidden";
-    playAgainBox.style.visibility = "visible";
-    playAgainBox.querySelector("h3").textContent = "Comp won the game!";
+    replayBox.style.visibility = "visible";
+    replayBox.querySelector("h3").textContent = "Comp won the game!";
   }
 }
 
