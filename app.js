@@ -3,8 +3,8 @@ const userHandImg = document.querySelector("#user-hand");
 const AiHandImg = document.querySelector("#Ai-hand");
 const choices = document.querySelectorAll(".logos > img");
 const choicesBox = document.querySelector(".logos");
-const userScoreNumber = document.querySelector(".user-score");
-const AiScoreNumber = document.querySelector(".Ai-score");
+const userScoreNumber = document.querySelector("#user-points");
+const AiScoreNumber = document.querySelector("#Ai-points");
 const playAgainBox = document.querySelector(".play-again");
 const gameOptions = ["rock", "paper", "scissors"];
 
