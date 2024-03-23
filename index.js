@@ -1,4 +1,4 @@
 var s=document.getElementById('start');
-function start(){
+function getSetGo(){
     location.href="./game.html";
 }
